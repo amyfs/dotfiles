@@ -3,6 +3,9 @@
 # User specific environment
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export PATH
+
+EDITOR=$(which vi)
+export EDITOR
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 export ANTLRPATH=$HOME/.local/bin/antlr-4.7.1-complete.jar
@@ -16,4 +19,8 @@ alias open="xdg-open"
 export PATH="/home/amy/go/bin:/home/amy/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+vidot () {
+    $EDITOR $HOME/dotfiles/$1
+}
 
