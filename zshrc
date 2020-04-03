@@ -1,3 +1,5 @@
+#prompt
+PROMPT='[%F{magenta}%n@%m]%f%~%# '
 
 #env vars
 export EDITOR=$(which nvim)
