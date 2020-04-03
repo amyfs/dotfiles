@@ -1,6 +1,7 @@
+autoload -U colors && colors
 #prompt
-PROMPT='[%F{magenta}%n@%m]%f%~%# '
-
+PROMPT='[%F{213}%n@%m%f]%~%# '
+RPROMPT='[%F{1}%D{%H:%M:%S}%f]'
 #env vars
 export EDITOR=$(which nvim)
 export ANTLRPATH=$HOME/.local/bin/antlr-4.7.1-complete.jar
