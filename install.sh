@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ln -sf $PWD/Xresources $HOME/.Xresources
 ln -sf $PWD/tmux.conf $HOME/.tmux.conf
 ln -sf $PWD/tmux $HOME/.tmux
 ln -sf $PWD/vimrc $HOME/.virc
