@@ -15,8 +15,8 @@ title=$(echo $raw_title | cut -f4 -d "\"")
 
 raw_album=$(echo $metadata | egrep -oe "\"xesam:album\" variant string \"[^\"]+\"")
 album=$(echo $raw_album | cut -f4 -d "\"")
-if [ "$(echo $album | wc -m)" -gt "46" ]; then
-    album=${album::45}."..."
+if [ "$(echo $album | wc -m)" -gt "45" ]; then
+    album=${album::44}.".."
 fi
 if [[ $artist ]]; then
     echo "${artist} - ${album} - ${title} "
